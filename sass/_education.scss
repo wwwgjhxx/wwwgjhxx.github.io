@@ -1,0 +1,24 @@
+.education {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+  @include print {
+    margin-bottom: 0;
+    line-height: 1em;
+  }
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+    @include print {
+      margin-bottom: 0;
+    }
+  }
+
+  &__period {
+    grid-row: 1/2;
+  }
+
+  &__institude {
+    grid-column: 2/3;
+  }
+}

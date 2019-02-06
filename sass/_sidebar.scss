@@ -1,0 +1,18 @@
+.sidebar {
+  border-right: $border-primary;
+
+  & > * {
+    margin-bottom: 2rem;
+  }
+
+  @include respond(tab-port) {
+    border-right: none;
+  }
+
+  @include print {
+    line-height: 1.5em;
+    & > * {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

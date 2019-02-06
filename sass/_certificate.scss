@@ -1,0 +1,13 @@
+.certification,
+.skills,
+.language {
+  @extend .base-format;
+
+  li::before {
+    content: "\003e";
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}

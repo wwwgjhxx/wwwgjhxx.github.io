@@ -1,0 +1,22 @@
+.base-format {
+  ul {
+    list-style: none;
+    margin-left: 2rem;
+  }
+
+  a:link,
+  a:visited {
+    color: currentColor;
+  }
+}
+
+.section-title {
+  text-transform: uppercase;
+  background-color: rgba($color-primary, 0.2);
+  padding: 1rem 0;
+  letter-spacing: 0.3rem;
+  @include print {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}

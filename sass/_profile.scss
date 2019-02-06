@@ -1,0 +1,17 @@
+.profile {
+  @extend .base-format;
+  & > * {
+    margin-bottom: 2rem;
+  }
+
+  &__site {
+    img {
+      width: 80%;
+      box-shadow: 0 0.5rem 1rem $color-grey-light-2;
+    }
+
+    &-subtitle {
+      margin-left: 2rem;
+    }
+  }
+}
