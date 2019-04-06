@@ -1,17 +1,18 @@
 .education {
   display: grid;
   grid-template-columns: 15rem 1fr;
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    border-bottom: 2px solid $color-primary;
+  }
   line-height: 1.5em;
   margin-bottom: 1.5em;
   @include print {
-    margin-bottom: 0;
-    line-height: 1em;
+    grid-template-columns: 1fr;
+    border-bottom: 2px solid $color-primary;
   }
   &:not(:last-child) {
     margin-bottom: 0.5rem;
-    @include print {
-      margin-bottom: 0;
-    }
   }
 
   &__period {
@@ -20,5 +21,11 @@
 
   &__institude {
     grid-column: 2/3;
+    @include respond(phone) {
+      grid-column: 1/2;
+    }
+    @include print {
+      grid-column: 1/2;
+    }
   }
 }

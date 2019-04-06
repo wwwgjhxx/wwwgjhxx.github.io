@@ -12,8 +12,10 @@
 
 .section-title {
   text-transform: uppercase;
-  background-color: rgba($color-primary, 0.2);
-  padding: 1rem 0;
+  background-color: $color-secondary;
+  padding: 1rem 0 1rem 5px;
+  border-top-right-radius: 10px;
+
   letter-spacing: 0.3rem;
   @include print {
     padding-top: 0.5rem;

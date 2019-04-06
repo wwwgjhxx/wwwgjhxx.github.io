@@ -10,9 +10,6 @@
   }
 
   @include print {
-    line-height: 1.5em;
-    & > * {
-      margin-bottom: 1.5rem;
-    }
+    border-right: none;
   }
 }

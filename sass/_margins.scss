@@ -4,9 +4,6 @@
 
 .mb-md {
   margin-bottom: 3rem;
-  @include print {
-    margin-bottom: 0.5rem;
-  }
 }
 
 .mb-lg {

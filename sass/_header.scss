@@ -12,16 +12,9 @@
     font-size: 4rem;
     align-self: end;
     font-family: $font-primary;
-
-    @include print {
-      padding-top: 5mm;
-    }
   }
 
   &__role {
     font-size: 1.5rem;
-    @include print {
-      padding-top: 2mm;
-    }
   }
 }
