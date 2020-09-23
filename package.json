@@ -1,24 +1,21 @@
 {
-  "name": "sarah-wang",
+  "name": "sarahw0.github.io",
   "version": "1.0.0",
-  "description": "Personal Resume",
-  "main": "index.js",
+  "description": "",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "start:dev": "webpack-dev-server",
+    "build": "webpack"
   },
-  "author": "Sarah",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.4.3",
-    "concat": "^1.0.3",
-    "node-sass": "^4.11.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.0"
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

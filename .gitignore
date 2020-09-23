@@ -19,5 +19,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # =========================
-# Operating System Files
+# node_modules
 # =========================
+node_modules/
